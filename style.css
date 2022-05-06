@@ -1,0 +1,115 @@
+* {
+  font-family: "Lexend Deca", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.container {
+  width: 75%;
+  height: 70%;
+  max-width: 1280px;
+
+  max-height: 1000px;
+  min-height: 550px;
+  background-color: rgb(50, 51, 51);
+  border-radius: 10px;
+  margin: 40px;
+  overflow: hidden;
+  display: flex;
+}
+.box {
+  width: 33.33%;
+  height: 100%;
+  padding: 6%;
+  font-size: 1em;
+}
+.box h1 {
+  font-family: "Big Shoulders Display", cursive;
+  padding: 20% 0;
+  color: hsl(0, 0%, 95%);
+}
+.box p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 200%;
+}
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+.learn_more {
+  width: 70%;
+  height: 10%;
+  min-height: 40px;
+
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+  margin-top: 35%;
+  margin-left: -2px;
+}
+.learn_more:hover {
+  background-color: transparent;
+  outline: 2px solid white;
+  color: white;
+}
+.learn_more:focus {
+  outline: none;
+  background-color: transparent;
+  outline: 2px solid white;
+  color: white;
+}
+.btn_1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn_2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn_3 {
+  color: hsl(179, 100%, 13%);
+}
+@media screen and (max-width: 786px) {
+  body {
+    height: 100%;
+  }
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: none;
+    max-width: none;
+    max-height: none;
+    min-height: none;
+    overflow: hidden;
+  }
+  .box {
+    width: 100%;
+  }
+  .learn_more {
+    width: 140px;
+  }
+}
